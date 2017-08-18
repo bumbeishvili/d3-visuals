@@ -539,7 +539,7 @@ function renderChartArea(params) {
 
           bubbles.attr('opacity', function (d) {
             if (
-              +d3.select(this).attr('cx') > calc.chartWidth ||
+              +d3.select(this).attr('cx') > calc.chartWidth - 40 ||
               +d3.select(this).attr('cx') < 0
             ) return 0;
 
