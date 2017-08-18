@@ -350,7 +350,7 @@
 
     var chart = renderChartArea()
       .svgHeight(500)
-      .svgWidth(1000)
+      .svgWidth(Math.min(window.innerWidth - 40, 1000))
       .backgroundFill('white')
       .data(data)
 
